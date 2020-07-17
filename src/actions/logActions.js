@@ -56,6 +56,28 @@ export const addLog = (log) => async (dispatch) => {
   }
 };
 
+// delete a log
+
+export const deleteLog = (id) => async (dispatch) => {
+  try {
+    setLoading();
+
+    const res = await fetch(`/logs/${id}`, {
+      method: "DELETE",
+    });
+
+    dispatch({
+      type: DELETE_LOG,
+      payload: id,
+    });
+  } catch (err) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: err.response.statusText,
+    });
+  }
+};
+
 //set loading to true
 export const setLoading = () => {
   return {
