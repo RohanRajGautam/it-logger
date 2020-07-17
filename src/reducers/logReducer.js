@@ -1,4 +1,14 @@
-import { LOGS_ERROR, GET_LOGS, SET_LOADING } from "../actions/types";
+import {
+  GET_LOGS,
+  SET_LOADING,
+  LOGS_ERROR,
+  ADD_LOG,
+  DELETE_LOG,
+  UPDATE_LOG,
+  SEARCH_LOGS,
+  SET_CURRENT,
+  CLEAR_CURRENT,
+} from "../actions/types";
 
 const initialState = {
   logs: null,
@@ -8,7 +18,7 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  switch (action.payload) {
+  switch (action.type) {
     case GET_LOGS:
       return {
         ...state,
@@ -23,7 +33,6 @@ export default (state = initialState, action) => {
       };
 
     case LOGS_ERROR:
-      console.log(action.payload);
       return {
         ...state,
         error: action.payload,

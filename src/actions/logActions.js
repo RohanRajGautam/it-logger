@@ -10,7 +10,7 @@ import {
   CLEAR_CURRENT,
 } from "./types";
 
-const getLogs = () => async (dispatch) => {
+export const getLogs = () => async (dispatch) => {
   try {
     setLoading();
 
@@ -24,12 +24,12 @@ const getLogs = () => async (dispatch) => {
   } catch (err) {
     dispatch({
       type: LOGS_ERROR,
-      payload: err.response.data,
+      payload: err.response.statusText,
     });
   }
 };
 
-const setLoading = () => {
+export const setLoading = () => {
   return {
     type: SET_LOADING,
   };
