@@ -39,6 +39,14 @@ export default (state = initialState, action) => {
         loading: true,
       };
 
+    case UPDATE_LOG:
+      return {
+        ...state,
+        logs: state.logs.map((log) =>
+          log.id === action.payload.id ? action.payload : log
+        ),
+      };
+
     case DELETE_LOG:
       return {
         ...state,
@@ -50,6 +58,18 @@ export default (state = initialState, action) => {
       return {
         ...state,
         error: action.payload,
+      };
+
+    case SET_CURRENT:
+      return {
+        ...state,
+        current: action.payload,
+      };
+
+    case CLEAR_CURRENT:
+      return {
+        ...state,
+        current: null,
       };
 
     default:
