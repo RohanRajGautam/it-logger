@@ -1,18 +1,18 @@
 {
   "logs": [
     {
-      "message": "Hey there, buddy",
-      "attention": false,
-      "tech": "Rohan Gautam",
-      "date": "2020-07-17T12:13:04.790Z",
-      "id": 1
-    },
-    {
       "id": 2,
       "message": "Server is down  - solved",
       "attention": false,
       "tech": "Rohan Gautam",
       "date": "2020-07-17T14:15:26.198Z"
+    },
+    {
+      "message": "Network down in dept 3",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2020-07-18T04:52:12.245Z",
+      "id": 3
     }
   ],
   "techs": [
