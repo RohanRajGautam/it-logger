@@ -14,31 +14,6 @@
 3. Redux ( State Management)<br>
 4. Json Server (Backend)<br>**
 
-## Functionalities
+## Preview
 
-* **Add Logs**
-
-<img src="Screenshots/Enter log.gif" width=450px>
-
-* **Update Logs**
-
-<img src="Screenshots/Update log.gif" width=450px>
-
-* **Delete Logs**
-
-<img src="Screenshots/Delete log.gif" width=450px>
-
-* **Search Logs**
-
-<img src="Screenshots/Search log.gif" width=450px>
-
-* **Add Techs**
-
-<img src="Screenshots/Add Tech.gif" width=450px>
-
-* **Delete Techs**
-
-<img src="Screenshots/Delete Tech.gif" width=450px>
-
-
-<br><br><br><br><br><br>
+![preview](https://i.imgur.com/HoqR6J8.png)
